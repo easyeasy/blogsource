@@ -102,3 +102,12 @@ rake watch      # Watches source/ and sass/ for changes and regenerates
 rake preview    # Watches, and mounts a webserver at http://localhost:4000
 
 {% endcodeblock %}
+
+### Push the blog source to another repository
+
+{% codeblock %}
+
+cd source
+git push origin master
+{% endcodeblock %}
+
