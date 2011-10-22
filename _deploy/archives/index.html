@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Kernel messages monitoring: tail -f dmesg Equivalent - 苹果园</title>
+  <title>Blog Archive - 苹果园</title>
   <meta name="author" content="大苹果">
 
   
-  <meta name="description" content="For a kernel module development project I worked on, I need to monitor the &#8216;dmesg&#8217; output continually. The solution is as following:1wh...">
+  <meta name="description" content="        Blog Archive              2011  Kernel messages monitoring: tail -f dmesg EquivalentOct 21 2011  posted in programming  How to create your ...">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/">
+  <link rel="canonical" href="http://blog.easyeasy.ca/blog/archives/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -73,99 +73,50 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Kernel messages monitoring: tail -f dmesg Equivalent</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2011-10-21T09:40:00-03:00" pubdate>Oct 21<span>st</span>, 2011</time>
-        
-      </p>
+    <h1 class="entry-title">Blog Archive</h1>
     
   </header>
-
-
-<div class="entry-content"><p>For a kernel module development project I worked on, I need to monitor the &#8216;dmesg&#8217; output continually. The solution is as following:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>while true;do dmesg -c; done</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Note: Running dmesg -c will clear the dmesg ring buffer contents after printing, so you will lose the contents of dmesg.</p>
-
-<p>There is another solution found on the web as following, but doesn&#8217;t work for me.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>echo "9 9 9 9" > /proc/sys/kernel/printk</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">大苹果</span></span>
-
-      
-
+  <div id="blog-archives">
 
 
 
   
+  <h2>2011</h2>
 
-<time datetime="2011-10-21T09:40:00-03:00" pubdate>Oct 21<span>st</span>, 2011</time>
-      
+<article>
+  
+<h1><a href="/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/">Kernel messages monitoring: tail -f dmesg Equivalent</a></h1>
+<time datetime="2011-10-21T09:40:00-03:00" pubdate><span class='month'>Oct</span> <span class='day'>21</span> <span class='year'>2011</span></time>
 
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/programming/'>programming</a>
-  
-</span>
+<footer>
+  <span class="categories">posted in <a class='category' href='/categories/programming/'>programming</a></span>
+</footer>
 
 
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/" data-via="" data-counturl="http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2011/10/20/title/" title="Previous Post: How to create your blog on Github with Octopress">&laquo; How to create your blog on Github with Octopress</a>
-      
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<article>
+  
+<h1><a href="/2011/10/20/title/">How to create your blog on Github with Octopress</a></h1>
+<time datetime="2011-10-20T16:50:00-03:00" pubdate><span class='month'>Oct</span> <span class='day'>20</span> <span class='year'>2011</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/categories/general/'>General</a></span>
+</footer>
+
+
+</article>
+
 </div>
-  </section>
+
+  
+</article>
 
 </div>
 
@@ -176,11 +127,11 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/">Kernel messages monitoring: tail -f dmesg Equivalent</a>
+        <a href="/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/">Kernel messages monitoring: tail -f dmesg Equivalent</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/10/20/title/">How to create your blog on Github with Octopress</a>
+        <a href="/2011/10/20/title/">How to create your blog on Github with Octopress</a>
       </li>
     
   </ul>
@@ -210,10 +161,7 @@
       var disqus_shortname = 'easyeasyblog';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/';
-        var disqus_url = 'http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
