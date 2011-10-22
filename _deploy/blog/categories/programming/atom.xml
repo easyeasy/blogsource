@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming | 苹果园]]></title>
+  <link href="http://blog.easyeasy.ca/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://blog.easyeasy.ca/"/>
+  <updated>2011-10-21T21:26:02-03:00</updated>
+  <id>http://blog.easyeasy.ca/</id>
+  <author>
+    <name><![CDATA[大苹果]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Kernel messages monitoring: tail -f dmesg Equivalent]]></title>
+    <link href="http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent/"/>
+    <updated>2011-10-21T09:40:00-03:00</updated>
+    <id>http://blog.easyeasy.ca/blog/2011/10/21/kernel-messages-monitoring-tail-f-dmesg-equivalent</id>
+    <content type="html"><![CDATA[<p>For a kernel module development project I worked on, I need to monitor the 'dmesg' output continually. The solution is as following:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>while true;do dmesg -c; done</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Note: Running dmesg -c will clear the dmesg ring buffer contents after printing, so you will lose the contents of dmesg.</p>
+
+<p>There is another solution found on the web as following, but doesn't work for me.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo "9 9 9 9" > /proc/sys/kernel/printk</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>
